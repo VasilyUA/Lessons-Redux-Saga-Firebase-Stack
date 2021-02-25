@@ -1,11 +1,11 @@
-import { GET_TODO, LOADING_TODO, END_LOADING_TODO } from './Types';
+import { FETCH_TODO, LOADING_TODO, END_LOADING_TODO } from './Types';
 
 const initialState = { data: {}, loading: false };
 
 // Reduser
 export const todo = (state = initialState, action) => {
    switch (action.type) {
-      case GET_TODO:
+      case FETCH_TODO:
          return {
             ...state,
             data: action.payload,
