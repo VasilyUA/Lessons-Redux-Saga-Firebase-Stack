@@ -1,0 +1,10 @@
+{
+	"semi": true,
+	"trailingComma": "all",
+	"singleQuote": true,
+	"printWidth": 220,
+	"tabWidth": 3,
+	"rcVerbose": true,
+	"usePrettier": true,
+	"arrowParens": "avoid"
+}
