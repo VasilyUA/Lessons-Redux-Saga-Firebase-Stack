@@ -14,9 +14,9 @@ export default function TodoList() {
    };
    return (
       <div className="container">
-         <form onSubmit={onSubmit}>
-            <input type="text" name="description" value={state.description} onChange={e => setState({ ...state, description: e.target.value })} required />
-            <input type="submit" value="Add todo" />
+         <form onSubmit={onSubmit} className="field" id="searchform">
+            <input type="text" name="description" id="searchterm" placeholder="Add todo" value={state.description} onChange={e => setState({ ...state, description: e.target.value })} required />
+            <input type="submit" id="search" value="Add todo" />
          </form>
       </div>
    );

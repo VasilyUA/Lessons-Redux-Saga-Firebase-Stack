@@ -32,13 +32,6 @@ export default function Main() {
                </li>
             ))}
          </ul>
-         {/* <ul>
-            {data.map(todo => (
-               <li key={todo.id}>
-                  {todo.description} <button onClick={() => onClick(todo.id)}>remove</button> <Link to={`/update/${todo.id}`}>Update</Link>
-               </li>
-            ))}
-         </ul> */}
       </div>
    );
 }

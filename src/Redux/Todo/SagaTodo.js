@@ -21,11 +21,13 @@ function* workerGetTodo() {
    }
 }
 function* workerCreateTodo(action) {
+   console.log('test=====================', action);
    try {
       yield put(loadingTodo());
       yield call(() => axios.post(`${urlDB}/todos.json`, action.data)); // request to database and response
       yield put(endLoadingTodo()); // off loading
    } catch (err) {
+      console.error(err);
       yield put(returnErrors(new Error(`Can not get todo: ${err}!`))); // set todo to reduser errors
       yield put(endLoadingTodo()); // off loading
    }
